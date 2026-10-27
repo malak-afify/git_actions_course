@@ -1,0 +1,13 @@
+name: First workflow
+on:
+  push: 
+   branches: 
+       - main
+jobs:
+  example-job:
+     runs-on: ubuntu_latest
+
+     steps:
+        -  name:  print a welcome massage
+           run: echo "Welcom to our frist Git Action Workflow"
+   
